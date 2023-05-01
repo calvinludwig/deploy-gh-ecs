@@ -6,7 +6,6 @@ const fastify = Fastify({
 })
 
 fastify.register(healthcheck)
-
 fastify.get('/', async (request, reply) => {
 	reply.type('application/json').code(200)
 	return { hello: 'world' }
