@@ -12,7 +12,7 @@ fastify.get('/', async (request, reply) => {
 	return { hello: 'world' }
 })
 
-fastify.listen({ port: 3000 }, (err, address) => {
+fastify.listen({ port: 80 }, (err, address) => {
 	console.log(`!!! server listening on ${address}`)
 	if (err) throw err
 })
